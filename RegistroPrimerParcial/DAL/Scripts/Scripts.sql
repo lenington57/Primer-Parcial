@@ -1,2 +1,2 @@
-CREATE DATABASE PrimerParcialDb
+CREATE DATABASE Parcial1Db
 go
