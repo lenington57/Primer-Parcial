@@ -21,6 +21,7 @@ namespace RegistroPrimerParcial.UI.Registros
 
         private void BuscarButton_Click(object sender, EventArgs e)
         {
+            //Buscando.
             int id = Convert.ToInt32(GrupoiIdNumericUpDown.Value);
 
             Grupos grupos = new Grupos();
@@ -54,6 +55,7 @@ namespace RegistroPrimerParcial.UI.Registros
         
         private Grupos LlenaClase()
         {
+            //Llenando nuestros campos de la entidad con los valores recibidos.
             Grupos grupos = new Grupos();
 
             grupos.GrupoId = Convert.ToInt32(GrupoiIdNumericUpDown.Value);
@@ -69,6 +71,7 @@ namespace RegistroPrimerParcial.UI.Registros
 
         private void NuevoButton_Click(object sender, EventArgs e)
         {
+            //Limpiando los componentes del registro.
             GrupoiIdNumericUpDown.Value = 0;
             FechaDateTimePicker.Value = DateTime.Now;
             DescripcionTextBox.Clear();
@@ -90,11 +93,13 @@ namespace RegistroPrimerParcial.UI.Registros
 
             Grupos grupos = LlenaClase();
             
+            //Si va a guardar o modificar
             if (GrupoiIdNumericUpDown.Value == 0)
                 paso = BLL.GruposBLL.Guardar(grupos);
             else
                 paso = BLL.GruposBLL.Modificar(grupos);
 
+            //Si se Guardó o no
             if (paso)
                 MessageBox.Show("Guardado!!", "Correcto!!",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
