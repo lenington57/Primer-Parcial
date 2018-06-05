@@ -115,6 +115,7 @@ namespace RegistroPrimerParcial.UI.Registros
                     MessageBoxButtons.OK,MessageBoxIcon.Error);
         }
 
+        //Aqui validamos que ningun campo quede vacío.
         private bool Validar()
         {
             bool Error = false;
