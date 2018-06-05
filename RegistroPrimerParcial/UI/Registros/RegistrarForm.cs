@@ -125,12 +125,6 @@ namespace RegistroPrimerParcial.UI.Registros
         {
             bool Error = false;
 
-            if (GrupoiIdNumericUpDown.Value == 0)
-            {
-                MyErrorProvider.SetError(GrupoiIdNumericUpDown, "No ha ingresado un ID");
-                Error = true;
-            }
-
             if (String.IsNullOrEmpty(DescripcionTextBox.Text))
             {
                 MyErrorProvider.SetError(DescripcionTextBox, "No ha ingresado una descripción");
