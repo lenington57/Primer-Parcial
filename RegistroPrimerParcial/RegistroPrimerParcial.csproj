@@ -50,6 +50,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\GruposBLL.cs" />
+    <Compile Include="DAL\Contexto.cs" />
+    <Compile Include="Entidades\Grupos.cs" />
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,8 +105,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BLL\" />
-    <Folder Include="Entidades\" />
     <Folder Include="UI\Reportes\" />
   </ItemGroup>
   <ItemGroup>

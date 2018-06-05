@@ -25,5 +25,17 @@ namespace RegistroPrimerParcial
         {
 
         }
+
+        private void registroGruposToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RegistroPrimerParcial.UI.Registros.RegistrarForm registrarForm = new UI.Registros.RegistrarForm();
+            registrarForm.Show();
+        }
+
+        private void consultarGruposToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RegistroPrimerParcial.UI.Consultas.ConsultarForm consultarForm = new UI.Consultas.ConsultarForm();
+            consultarForm.Show();
+        }
     }
 }

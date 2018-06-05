@@ -54,10 +54,18 @@
             // FiltroComboBox
             // 
             this.FiltroComboBox.FormattingEnabled = true;
+            this.FiltroComboBox.Items.AddRange(new object[] {
+            "GrupoID",
+            "Fecha",
+            "Descripcion",
+            "Cantidad",
+            "GruposEstudiantes",
+            "Integrantes"});
             this.FiltroComboBox.Location = new System.Drawing.Point(80, 12);
             this.FiltroComboBox.Name = "FiltroComboBox";
             this.FiltroComboBox.Size = new System.Drawing.Size(121, 21);
             this.FiltroComboBox.TabIndex = 1;
+            this.FiltroComboBox.SelectedIndexChanged += new System.EventHandler(this.FiltroComboBox_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -140,6 +148,7 @@
             this.BuscarButton.TabIndex = 4;
             this.BuscarButton.Text = "Buscar";
             this.BuscarButton.UseVisualStyleBackColor = true;
+            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
             // 
             // ConsultarForm
             // 
