@@ -147,6 +147,7 @@
             this.CantidadTextBox.Name = "CantidadTextBox";
             this.CantidadTextBox.Size = new System.Drawing.Size(177, 20);
             this.CantidadTextBox.TabIndex = 9;
+            this.CantidadTextBox.TextChanged += new System.EventHandler(this.CantidadTextBox_TextChanged);
             // 
             // label4
             // 
@@ -163,6 +164,7 @@
             this.GruposTextBox.Name = "GruposTextBox";
             this.GruposTextBox.Size = new System.Drawing.Size(149, 20);
             this.GruposTextBox.TabIndex = 11;
+            this.GruposTextBox.TextChanged += new System.EventHandler(this.GruposTextBox_TextChanged);
             // 
             // label5
             // 

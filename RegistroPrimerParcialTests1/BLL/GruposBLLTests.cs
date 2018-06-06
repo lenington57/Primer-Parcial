@@ -52,7 +52,6 @@ namespace RegistroPrimerParcial.BLL.Tests
             grupos.Descripcion = "Aplicados";
             grupos.Cantidad = 22;
             grupos.GrupoCant = 11;
-            paso = BLL.GruposBLL.Modificar(grupos);
             id = grupos.GrupoId;
             paso = BLL.GruposBLL.Eliminar(id);
             Assert.AreEqual(paso, true);

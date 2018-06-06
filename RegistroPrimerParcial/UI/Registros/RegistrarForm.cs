@@ -145,5 +145,18 @@ namespace RegistroPrimerParcial.UI.Registros
 
             return Error;
         }
+
+        private void CantidadTextBox_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void GruposTextBox_TextChanged(object sender, EventArgs e)
+        {
+            int x = Convert.ToInt32(CantidadTextBox.Text);
+            int y = Convert.ToInt32(GruposTextBox.Text);
+            float r = x / y;
+            IntegrantesTextBox.Text = r.ToString();
+        }
     }
 }
