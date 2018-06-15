@@ -32,11 +32,12 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registroGruposToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarGruposToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.AyudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.registroGruposToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultarGruposToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registroPersonasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,10 +64,18 @@
             // registrosToolStripMenuItem
             // 
             this.registrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.registroGruposToolStripMenuItem});
+            this.registroGruposToolStripMenuItem,
+            this.registroPersonasToolStripMenuItem});
             this.registrosToolStripMenuItem.Name = "registrosToolStripMenuItem";
             this.registrosToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
             this.registrosToolStripMenuItem.Text = "Registros";
+            // 
+            // registroGruposToolStripMenuItem
+            // 
+            this.registroGruposToolStripMenuItem.Name = "registroGruposToolStripMenuItem";
+            this.registroGruposToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.registroGruposToolStripMenuItem.Text = "Registro Grupos";
+            this.registroGruposToolStripMenuItem.Click += new System.EventHandler(this.registroGruposToolStripMenuItem_Click);
             // 
             // consultasToolStripMenuItem
             // 
@@ -76,25 +85,25 @@
             this.consultasToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.consultasToolStripMenuItem.Text = "Consultas";
             // 
+            // consultarGruposToolStripMenuItem
+            // 
+            this.consultarGruposToolStripMenuItem.Name = "consultarGruposToolStripMenuItem";
+            this.consultarGruposToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.consultarGruposToolStripMenuItem.Text = "Consultar Grupos";
+            this.consultarGruposToolStripMenuItem.Click += new System.EventHandler(this.consultarGruposToolStripMenuItem_Click);
+            // 
             // AyudaToolStripMenuItem
             // 
             this.AyudaToolStripMenuItem.Name = "AyudaToolStripMenuItem";
             this.AyudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
             this.AyudaToolStripMenuItem.Text = "Ayuda";
             // 
-            // registroGruposToolStripMenuItem
+            // registroPersonasToolStripMenuItem
             // 
-            this.registroGruposToolStripMenuItem.Name = "registroGruposToolStripMenuItem";
-            this.registroGruposToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.registroGruposToolStripMenuItem.Text = "Registro Grupos";
-            this.registroGruposToolStripMenuItem.Click += new System.EventHandler(this.registroGruposToolStripMenuItem_Click);
-            // 
-            // consultarGruposToolStripMenuItem
-            // 
-            this.consultarGruposToolStripMenuItem.Name = "consultarGruposToolStripMenuItem";
-            this.consultarGruposToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.consultarGruposToolStripMenuItem.Text = "Consultar Grupos";
-            this.consultarGruposToolStripMenuItem.Click += new System.EventHandler(this.consultarGruposToolStripMenuItem_Click);
+            this.registroPersonasToolStripMenuItem.Name = "registroPersonasToolStripMenuItem";
+            this.registroPersonasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.registroPersonasToolStripMenuItem.Text = "Registro Personas";
+            this.registroPersonasToolStripMenuItem.Click += new System.EventHandler(this.registroPersonasToolStripMenuItem_Click);
             // 
             // Principal
             // 
@@ -124,6 +133,7 @@
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.ToolStripMenuItem registroGruposToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultarGruposToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registroPersonasToolStripMenuItem;
     }
 }
 

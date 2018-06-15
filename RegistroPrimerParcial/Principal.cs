@@ -37,5 +37,11 @@ namespace RegistroPrimerParcial
             RegistroPrimerParcial.UI.Consultas.ConsultarForm consultarForm = new UI.Consultas.ConsultarForm();
             consultarForm.Show();
         }
+
+        private void registroPersonasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RegistroPrimerParcial.UI.Registros.RPersonasForm rPersonasForm = new UI.Registros.RPersonasForm();
+            rPersonasForm.Show();
+        }
     }
 }

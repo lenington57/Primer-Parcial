@@ -42,6 +42,14 @@ namespace RegistroPrimerParcial.BLL
 
             try
             {
+                //recorrer el detalle
+                foreach (var item in grupos.Detalle)
+                {
+                    //Muy importante indicar que pasara con la entidad del detalle
+                    var estado = item.Id > 0 ? EntityState.Modified : EntityState.Added;
+                    contexto.Entry(item).State = estado;
+                }
+
                 contexto.Entry(grupos).State = EntityState.Modified;
                 if (contexto.SaveChanges() > 0)
                 {
@@ -90,6 +98,15 @@ namespace RegistroPrimerParcial.BLL
             try
             {
                 grupos = contexto.Grupos.Find(id);
+
+                grupos.Detalle.Count();
+                //Cargar los nombres de las personas
+                foreach (var item in grupos.Detalle)
+                {
+                    //forzando la persona a cargarse
+                    string s = item.Personas.Nombres;
+                }
+
                 contexto.Dispose();
             }
             catch (Exception)

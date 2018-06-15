@@ -9,7 +9,9 @@ namespace RegistroPrimerParcial.DAL
 {
     public class Contexto : DbContext
     {
+        
         public DbSet<Grupos> Grupos { get; set; }
+        public DbSet<Personas> Personas { get; set; }
 
         public Contexto() : base("ConStr")
         {

@@ -51,8 +51,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\GruposBLL.cs" />
+    <Compile Include="BLL\PersonasBLL.cs" />
     <Compile Include="DAL\Contexto.cs" />
     <Compile Include="Entidades\Grupos.cs" />
+    <Compile Include="Entidades\GruposDetalle.cs" />
+    <Compile Include="Entidades\Personas.cs" />
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,11 +70,23 @@
     <Compile Include="UI\Consultas\ConsultarForm.Designer.cs">
       <DependentUpon>ConsultarForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\Consultas\PersonasConsultarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Consultas\PersonasConsultarForm.Designer.cs">
+      <DependentUpon>PersonasConsultarForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\Registros\RegistrarForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UI\Registros\RegistrarForm.Designer.cs">
       <DependentUpon>RegistrarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Registros\RPersonasForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Registros\RPersonasForm.Designer.cs">
+      <DependentUpon>RPersonasForm.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
@@ -89,8 +104,14 @@
     <EmbeddedResource Include="UI\Consultas\ConsultarForm.resx">
       <DependentUpon>ConsultarForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\Consultas\PersonasConsultarForm.resx">
+      <DependentUpon>PersonasConsultarForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\Registros\RegistrarForm.resx">
       <DependentUpon>RegistrarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Registros\RPersonasForm.resx">
+      <DependentUpon>RPersonasForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
     <None Include="packages.config" />

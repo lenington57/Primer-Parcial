@@ -22,6 +22,9 @@ namespace RegistroPrimerParcial.Entidades
 
         public float Integrantes { get; set; }
 
+        public virtual ICollection<GruposDetalle> Detalle { get; set; }
+        
+        
         //Constructor
         public Grupos()
         {
@@ -31,7 +34,13 @@ namespace RegistroPrimerParcial.Entidades
             Cantidad = 0;
             GrupoCant = 0;
             Integrantes = 0;
+            this.Detalle = new List<GruposDetalle>();
         }
 
+        //Método opcional para agregar un ítem a la lista.
+        public void AgregarDetalle(int id, int grupoId, int personaId, string cargo)
+        {
+            this.Detalle.Add(new GruposDetalle(id, grupoId, personaId, cargo));
+        }
     }
 }

@@ -153,10 +153,21 @@ namespace RegistroPrimerParcial.UI.Registros
 
         private void GruposTextBox_TextChanged(object sender, EventArgs e)
         {
-            int x = Convert.ToInt32(CantidadTextBox.Text);
-            int y = Convert.ToInt32(GruposTextBox.Text);
-            float r = x / y;
-            IntegrantesTextBox.Text = r.ToString();
+            int val;
+            bool result = int.TryParse(CantidadTextBox.Text, out val);
+            if (!result)
+                return;
+
+            int valor;
+            bool resulta = int.TryParse(GruposTextBox.Text, out valor);
+            if (!result)
+                return;
+
+            int can = Convert.ToInt32(val);
+            int gru = Convert.ToInt32(valor);
+            float res = can / gru;
+
+            IntegrantesTextBox.Text = res.ToString();
         }
     }
 }
